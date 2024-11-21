@@ -8,14 +8,23 @@ body {
         background-color: #6a3460;
         #logo {
             margin-left: 4%;
+            margin-top: auto;
+            margin-bottom: auto;
             img {
             width: 17%;
             }
         }
         #navigation {
-            font-size: 40px;
+            display: flex;
             margin-top: auto;
             margin-bottom: auto;
+            font-size: 40px;
+            .box {
+                margin-left: 30px;
+                &:hover {
+                    color: black;
+                }
+            }
         }
     }
     main {
@@ -61,6 +70,9 @@ body {
                 display: flex;
                 justify-content: space-around;
                 .image {
+                    &:hover {
+                        color: #FFFFFF;
+                    }
                     img {
                         height: 200px;
                         width: 200px;
@@ -68,10 +80,37 @@ body {
                     }
                 }
             }
-        }        
+        }
+        #endMain {
+            width: 100%;
+            height: 240px;
+            background-image: url(/images/holiday.jpg);
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #button {
+                padding: 1.5%;
+                font-family: "Open Sans", sans-serif;
+                background-color: #6a3460;
+                color: #FFFFFF;
+                text-align: center;
+                border: 5px solid;
+                border-radius: 20px;
+                transition-duration: 1s;
+                &:hover {
+                    padding: 2.25%;
+                }
+            }
+        }
     }
     
     footer {
+        width: 100%;
+        height: 500px;
+        background-color: #6a3460;
+        display: flex;
+        justify-content: center;
     }
 }
 
