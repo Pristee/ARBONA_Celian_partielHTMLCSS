@@ -1,9 +1,26 @@
 body {
     margin: 0px;
+    header {
+        display: flex;
+        justify-content: space-between;
+        color: #FFFFFF;
+        background-color: #6a3460;
+        #logo {
+            margin-left: 4%;
+            img {
+            width: 17%;
+            }
+        }
+        #navigation {
+            font-size: 40px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
+    main {
+    }
+    
+    footer {
+    }
 }
 
-main {
-}
-
-footer {
-}
